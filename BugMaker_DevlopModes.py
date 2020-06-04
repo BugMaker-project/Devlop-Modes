@@ -9,7 +9,7 @@ def __Dis_Sort():
 #预留代码部分：
 class ExceptionBug(Exception):
     pass
-class NonePointerExpection(ExceptionBug):
+class NonePointerException(ExceptionBug):
     pass
 class NonePointerError(ExceptionBug):
     pass
@@ -130,9 +130,10 @@ def NotEmpty(Var):#正确的判空语句有助于减少不必要的错误
     if reponse!=None:
         return True
     return False
-def __Dis_NotEmpty(Var):#不正确的判空语句抛出大量异常不便于Expect.
+def __Dis_NotEmpty(Var):#不正确的判空语句抛出大量异常不便于Except.
     reponse=Var
     if reponse==None:
         raise NonePointerError("Empty!")
+
 
         
