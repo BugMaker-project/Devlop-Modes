@@ -130,7 +130,7 @@ def NotEmpty(Var):#正确的判空语句有助于减少不必要的错误
     if reponse!=None:
         return True
     return False
-def __Dis_NotEmpty(Var):
+def __Dis_NotEmpty(Var):#不正确的判空语句抛出大量异常不便于Expect.
     reponse=Var
     if reponse==None:
         raise NonePointerError("Empty!")
