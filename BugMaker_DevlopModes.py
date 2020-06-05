@@ -13,6 +13,8 @@ class NonePointerException(ExceptionBug):
     pass
 class NonePointerError(ExceptionBug):
     pass
+class ZeroException(ExceptionBug):
+    pass
 #Author:Barry Liu
 #-----Chapter 1 基本语句要求-----
 #第一部分:变量名及非核心函数
@@ -118,7 +120,7 @@ def ServersIF(Num):#在设计核心代码的时候禁止使用else作为逻辑�
     elif Num<0:
         return "Num<0"
     else:
-        raise NonePointerExpection("Is ZERO")
+        raise ZeroExpection("Is ZERO")
 def __Dis_ServerIF(Num):
     if Num>0:
         return "Num>0"
